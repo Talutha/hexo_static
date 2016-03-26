@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Marvin&#39;s Programming Blog</title>
+  <title>Apply(), Call(), and Bind() Walk Into This | Marvin&#39;s Programming Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This blog will detail my journey from amateur programmer to full time developer.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Marvin's Programming Blog">
-<meta property="og:url" content="http://marvinwarren.me/index.html">
+  <meta name="description" content="Over the course of yesterday and today I have been learning about Closures and Callbacks.  Lucky for me neither concept was difficult to understand and after a bit of practice I think I can start to s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Apply(), Call(), and Bind() Walk Into This">
+<meta property="og:url" content="http://marvinwarren.me/2016/03/25/Apply-Call-and-Bind-Walk-Into-a-Bar/index.html">
 <meta property="og:site_name" content="Marvin's Programming Blog">
-<meta property="og:description" content="This blog will detail my journey from amateur programmer to full time developer.">
+<meta property="og:description" content="Over the course of yesterday and today I have been learning about Closures and Callbacks.  Lucky for me neither concept was difficult to understand and after a bit of practice I think I can start to s">
+<meta property="og:updated_time" content="2016-03-26T04:25:45.314Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Marvin's Programming Blog">
-<meta name="twitter:description" content="This blog will detail my journey from amateur programmer to full time developer.">
+<meta name="twitter:title" content="Apply(), Call(), and Bind() Walk Into This">
+<meta name="twitter:description" content="Over the course of yesterday and today I have been learning about Closures and Callbacks.  Lucky for me neither concept was difficult to understand and after a bit of practice I think I can start to s">
   
     <link rel="alternative" href="/atom.xml" title="Marvin&#39;s Programming Blog" type="application/atom+xml">
   
@@ -25,9 +26,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -38,8 +36,8 @@
       var yiliaConfig = {
           fancybox: true,
           animate: false,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -175,9 +173,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-Apply-Call-and-Bind-Walk-Into-a-Bar" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Apply-Call-and-Bind-Walk-Into-a-Bar" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/03/25/Apply-Call-and-Bind-Walk-Into-a-Bar/" class="article-date">
@@ -193,12 +189,23 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/25/Apply-Call-and-Bind-Walk-Into-a-Bar/">Apply(), Call(), and Bind() Walk Into This</a>
+    <h1 class="article-title" itemprop="name">
+      Apply(), Call(), and Bind() Walk Into This
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript-Learning/">-Javascript -Learning</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -234,110 +241,147 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Javascript-Learning/">-Javascript -Learning</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/03/25/Apply-Call-and-Bind-Walk-Into-a-Bar/">Apply(), Call(), and Bind() Walk Into This</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 Marvin Warren 的个人博客">Marvin Warren</a></p>
+        <p><span>发布时间:</span>2016年03月25日 - 22时20分</p>
+        <p><span>最后更新:</span>2016年03月25日 - 23时25分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/03/25/Apply-Call-and-Bind-Walk-Into-a-Bar/" title="Apply(), Call(), and Bind() Walk Into This">http://marvinwarren.me/2016/03/25/Apply-Call-and-Bind-Walk-Into-a-Bar/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://marvinwarren.me/2016/03/25/Apply-Call-and-Bind-Walk-Into-a-Bar/　　作者: Marvin Warren" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2016/03/24/IIFE-s-and-ME/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">IIFE&#39;s and ME!</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
-
-
-
-
-
-
-
-
-  
-    <article id="post-IIFE-s-and-ME" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/24/IIFE-s-and-ME/" class="article-date">
-      <time datetime="2016-03-24T19:20:00.000Z" itemprop="datePublished">2016-03-24</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
     
-      <input type="hidden" class="isFancy" />
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+
+
     
+        <section id="comments">
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'marvinwarren'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
     
-      <header class="article-header">
+
+
+
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/24/IIFE-s-and-ME/">IIFE&#39;s and ME!</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>I think it’s finally happening.  For the past couple of months I have been diving in hard to learn Javascript.  Web development is always something I’ve been interested in.  I can recall my first website, a fan page of Banjo-Kazooie that was hosted on Fortunecity or Geopages.  One of those big city-esque site hosts from the 90s.  But I’ve always avoided the real programming aspect of web development.</p>
-<p>I started programming very casually a year ago in Ruby.  It just seemed like a nice easy to use language that worked well for what I was doing.  I spent months creating a bot for <a href="http://www.twitch.tv" target="_blank" rel="external">Twitch</a>.  It was a fairly simple premise, people say commands and it runs some logic.  There were a few advanced things in there, at least to me such as running automated games that viewers could play.  Then I went back to web development, something I hadn’t touched seriously before.  I created <a href="http://www.talutha.tv" target="_blank" rel="external">Talutha.tv</a>.</p>
-<p>It used a simple Ruby backend framework called Sinatra which allowed me to run some logic to get information from a PostgreSQL database I had setup through Digital Ocean where my bot was also hosted(my website was hosted through Heroku).  All in all, I created what I ultimately set out to do, I created a website that viewers could see their stats on in real time while interacting with my bot through Twitch.  It was awesome.  But there were still things I couldn’t do.  Things that involved Javascript.  Being an amateur programmer at this point, I felt I didn’t want to learn another programming language and ultimately let the whole project grow stagnant.</p>
-<p>Fast forward to today, I decided a couple of months ago I really wanted to get into this whole development stuff.  I had a LOT of fun creating my bot and website, but I wanted to do more.  I wanted to learn Javascript so I could truly do some cool stuff on the internet.  And here we are.  Its been tough, Javascript is definitely a much more difficult language to learn than Ruby ever was, but I think I’ve finally started to have break throughs.</p>
-<p>It started earlier today when I wondered what the difference was between a function expression and a function decleration.  I mean, I understand the basic concept, an expression uses a var keyword before the function and a decleration just puts the function with no var keyword.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Function Expression</span></span><br><span class="line"><span class="keyword">var</span> greet = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Howdy '</span> + name);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Function Decleration</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">greetFunc</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Howdy '</span> + name);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>Why would I want to use one over the other?  So I went onto Google and searched around for a bit before coming across <a href="https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/" target="_blank" rel="external">this article</a> by Angus Croll. I read it, and I understood it.  My first major breakthrough in Javascript I felt where I actually read through an entire article and felt like I came out the other end smarter than before rather than more confused.  I already understood how hoisting works differently with expressions and declerations which helped immensly.  I’m getting somewhere, and I’m excited.</p>
-<p>That isn’t the topic of today’s blog entry though, maybe I’ll go back and talk about when to use what in reference to functions but today we’re going to talk about my second breakthrough(in the same day even!): IIFE’s, or Immediately-Invoked Function Expressions.  Please keep in mind though that I write these blogs to further my own understanding of everything so my writing might be a little odd at times but if you have any questions or comments, feel free to <a href="mailto: marvin.warren@gmail.com" target="_blank" rel="external">email me</a> and I will do my best to help you out.</p>
-<p>IIFEs are pretty simple I think.  They are merely functions that are invoked as soon as they are created.  Lets take a look at a very simple example:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> greet = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Howdy '</span> + name);</span><br><span class="line">&#125;();</span><br></pre></td></tr></table></figure>
-<p>Notice the difference between this and a regular function?  Look at the end there, the <code>()</code>.  That is how we invoke functions in Javascript, by adding <code>()</code>.  We didn’t pass any arguments into the function though so all we will get at runtime is <code>Howdy undefined</code> in the console.  But all you have to do is put in your arguments between <code>(</code> and <code>)</code> then you will be good to go.  </p>
-<p>Lets apply this to our next example while also taking a look at something else that I found really interesting.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> greet = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'Howdy '</span> + name;</span><br><span class="line">&#125;(<span class="string">'Marvin'</span>);</span><br></pre></td></tr></table></figure>
-<p>So what happens here?  Where are we returning to?  We’re just returning to the variable <code>greet</code>.  The reason I found this so interesting is because normally if you would call a variable with a function in it through <code>console.log(greet);</code> you would get that actual function returned.  But in this case, that same call would result in the console logging <code>Howdy Marvin</code>.  As Javascript ran through the code, it actually runs the function and returns the string so that when all is done, <code>greet</code> contains a string and not a function.  Super cool.</p>
-<p>The last thing I’ll talk about since this blog is super long because of the tangent I went on in the beginning is trying to run a decleration IIFE.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Howdy '</span> + name);</span><br><span class="line">&#125;(<span class="string">'Marvin'</span>);</span><br></pre></td></tr></table></figure>
-<p>This unfortunately will not run.  You are met with an <code>Unexpected Token: (</code> error. The Javascript parser sees that you are trying to setup a function here but without a name, an anonymous function, and this error is thrown because you need a name for function declarations.  Lucky for us, we can work around this by tricking Javascript into thinking that this is an expression.  By wrapping the whole function in <code>()</code> it will treat it as an expression.  This will cause the function to run and the code to process correctly.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Howdy '</span> + name);</span><br><span class="line">&#125;(<span class="string">'Marvin'</span>));</span><br></pre></td></tr></table></figure>
-<p>This WILL run, again because as soon as the Javascript parser hits the first <code>(</code> it starts evaluating everything inside as an expression, this giving you what you want.</p>
-<p>IIFEs are really cool and I can’t wait to figure out ways to use them within my own code.  Now that I’ve made these couple of breakthroughs in my Javascript knowledge, I’m more motivated than ever.  If you’re learning folks, don’t give up!  Who knows when you’ll hit that first breakpoint.  Good luck!</p>
-
-      
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/03/24/IIFE-s-and-ME/" title="下一篇: IIFE&#39;s and ME!">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript-Learning/">-javascript -Learning</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/25/Apply-Call-and-Bind-Walk-Into-a-Bar/">Apply(), Call(), and Bind() Walk Into This</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/24/IIFE-s-and-ME/">IIFE's and ME!</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
 
 
 
-  
-  
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
